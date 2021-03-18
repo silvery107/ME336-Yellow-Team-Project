@@ -1,10 +1,10 @@
 <mxfile>
     <diagram id="s9ewCfakGo9g7QXZol3i" name="第 1 页">
-        <mxGraphModel dx="1145" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+        <mxGraphModel dx="1134" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="45" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;strokeColor=#6c8ebf;fillColor=#dae8fc;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+                <mxCell id="45" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;strokeColor=#6c8ebf;fillColor=#dae8fc;dashed=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="600" y="430" width="330" height="270" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2" target="3" edge="1">
@@ -42,7 +42,7 @@
                 <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="10" target="22" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="FC Layer Finetuneing" style="whiteSpace=wrap;html=1;rounded=1;fontSize=15;strokeWidth=2;fillColor=#cdeb8b;strokeColor=#36393d;" parent="1" vertex="1">
+                <mxCell id="10" value="FC Layer Finetuning" style="whiteSpace=wrap;html=1;rounded=1;fontSize=15;strokeWidth=2;fillColor=#cdeb8b;strokeColor=#36393d;" parent="1" vertex="1">
                     <mxGeometry x="420" y="730" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="Pretrained &lt;br&gt;YOLO v5 model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
@@ -116,25 +116,25 @@
                 <mxCell id="36" value="Optimal release velocity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="675" y="790" width="160" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="$$\hat{v}$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="37" value="$$\hat{v}$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="504" y="790" width="90" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="$$\delta$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="38" value="$$\delta$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="860" y="670" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="$$v=\hat{v}+\delta$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="39" value="$$v=\hat{v}+\delta$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="680" y="810" width="140" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="Landing location" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="40" value="Landing location" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="755" y="900" width="120" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="$$\bar{p}$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="41" value="$$\bar{p}$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="835" y="900" width="90" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="42" value="Ground truth residual label" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="42" value="Ground truth residual label" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="740" y="860" width="180" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="$$\bar{\delta}=\Vert v\Vert-\Vert \bar{v} \Vert$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="43" value="$$\bar{\delta}=\Vert v\Vert-\Vert \bar{v} \Vert$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="680" y="880" width="300" height="20" as="geometry"/>
                 </mxCell>
             </root>
