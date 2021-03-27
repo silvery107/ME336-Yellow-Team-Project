@@ -1,0 +1,12 @@
+# robot base coordinate, unit meter
+# [x, y]
+xy1: [0.5, 0.5] #Point 1
+xy2: [0.4, 0.4]
+xy3: [0.4, -0.4]
+xy4: [0.5, 0.0]
+# camera base coordinate
+# [col, row]
+uv1: [1049, 411] #Point 1
+uv2: [971, 311]
+uv3: [354, 295]
+uv4: [660, 390]
