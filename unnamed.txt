@@ -1,0 +1,55 @@
+# pcl 安装
+sudo apt-get install libusb-1.0-0-dev libusb-dev libudev-dev
+sudo apt-get install mpi-default-dev openmpi-bin openmpi-common  
+sudo apt-get install libflann1.9 libflann-dev
+sudo apt-get install libeigen3-dev
+sudo apt-get install libboost-all-dev
+# sudo apt-get install libvtk7-jni
+sudo apt-get install libvtk7.1-qt libvtk7.1 libvtk7-dev
+sudo apt-get install libqhull* libgtest-dev
+sudo apt-get install freeglut3-dev pkg-config
+sudo apt-get install libxmu-dev libxi-dev 
+sudo apt-get install mono-complete
+sudo apt-get install libpcap-dev
+
+In 
++,download source code(tar.gz) and tar it
+cd pcl-pcl-1.8.1
+mkdir build
+cd build
+cmake ..
+make -j4
+sudo make install
+
+
+# fci 安装
+sudo apt install git
+git clone --recursive https://github.com/frankaemika/libfranka
+cd libfranka
+git checkout 0.7.1
+git submodule update
+
+sudo apt install build-essential cmake git libpoco-dev libeigen3-dev
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .
+sudo make install
+
+# pybind11
+git clone https://github.com/pybind/pybind11.git
+cd pybind11
+mkdir build
+cd build 
+cmake ..
+make -j4
+sudo make install
+
+
+# franka driver
+cd /home/doyle/Me336/ME336-2021Spring/deepclaw/driver/arms/franka
+mkdir build
+cd build
+cmake ..
+
+
