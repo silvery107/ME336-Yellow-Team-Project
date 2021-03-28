@@ -465,19 +465,19 @@ There are two cases of hand-eye calibration depending on if the camera is fixed 
 
   In this case, the aim of hand-eye calibration is to calculate the transfer matrix T between robot arm coordinate X1 and camera coordinate X2: 
 
-X1 = T*X2
+$$X_1 =TX_2 $$
 
   T is a homogeneous matrix, so the formula can also be written in form of rotation matrix R and translation matrix C: 
 
-X1 = R*X2 + C
+$$X_1  =RX_2+C$$
 
-[x1, y1] = R*[x2, y2] + C
+$$[x_1, y_1]=R[x_2,y_2]+C$$
 
   After derivation: 
 
-x1 = r1*x1 + r2*y2 + C1
+$$x_1=r_1x_1+r_2y_2+c_1$$
 
-y1 = r3*x1 + r4*y2 +C2
+$$y_1=r_3x_1+r_4y_2+c_2$$
 
   There are 6 unknown variables, so at least 3 points are needed to calculate the transfer matrix. Take the error of points’ coordination and camera distortion into consideration, we can reduce the measure error by sampling more points and take average whe. In practice, the nine-points calibration which requires 9 sample points is frequently used to get a better accuracy. Besides, sample points are better to be scattered over a large area in order to reduce the impact of measurement error.
 
