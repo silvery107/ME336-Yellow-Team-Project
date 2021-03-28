@@ -176,13 +176,13 @@ git clone git@github.com:1079931505/ME336-Yellow-Team-SUSTech.git
 cd ME336-Yellow-Team-SUSTech 
 ```
 
-1. Install the required python modules
+2. Install the required python modules
 
 ```
 pip install -r requirements.txt
 ```
 
-1. Update weights of yolo v5
+3. Update weights of yolo v5
 
 ```
 sh ./deepclaw/modules/end2end/yolov5/weights/download_weights.sh
@@ -194,19 +194,19 @@ sh ./deepclaw/modules/end2end/yolov5/weights/download_weights.sh
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=M2E3MzlmNjlhMGY2ZWYzNmJmNzY3MTFkMThiMTM4YmZfUUI2RVhWdW1BUmRMZW1KOUhQNGFmeDM2TkVWOVZtcUtfVG9rZW46Ym94Y25oQUVmdXdITXhOOTQxNkNRcFZUUXNkXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-1. Run realsense-viewer in the terminal, click RGB Camera Off and open 2D Camera. Adjust the realsense and camera shelf to ensure that the realsense view is as shown below. 
+2. Run realsense-viewer in the terminal, click RGB Camera Off and open 2D Camera. Adjust the realsense and camera shelf to ensure that the realsense view is as shown below. 
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=YTQzYjdlMTIwZjNkYmRiNmI2Mjg4MDliMWQyNGUzNDRfSzBjVWV1bkVoTVhqZzdTR2h3RU9MVlJMQVo3QW8yZDhfVG9rZW46Ym94Y25TdW1nSDRQa0xkY05YN01xd0VPTGxkXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
 
 
-1. Run Calibration2D.py and record two return values.
+3. Run Calibration2D.py and record two return values.
 
 ```
 python ./deepclaw/modules/calibration/Calibration2D.py
 ```
 
-1. Modify the first two values in FC.move_p() in FrankaController.py, then run it.
+5. Modify the first two values in FC.move_p() in FrankaController.py, then run it.
 
 ```
 vim ./deepclaw/driver/arms/franka/FrankaController.py
@@ -215,7 +215,7 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=NjRkMzdiNmM3NDFkOGEyMmRjZmMzYWI1NzRiODg4MWJfZE1PbGxSSnB1YnZVQUdITE5zQUVhM2ZjZHlDR3lXQWJfVG9rZW46Ym94Y25NTDUyd21ETlBZdGZUNE1ldU04bFJjXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-1. Observe the gap between the end of the robotic arm calibration board and the calibration object on the conveyor belt to check whether the error is reasonable.
+6. Observe the gap between the end of the robotic arm calibration board and the calibration object on the conveyor belt to check whether the error is reasonable.
 
 ## 2-D picking
 
@@ -223,29 +223,29 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=M2VlOGFkNGFkM2M1NDdiMmI4ZTE4MGNiOGIxYjk2NGRfbnkzVWtDQVdxeW9NR00zeTZQQ3BmNG00UnkyZUViTHBfVG9rZW46Ym94Y25UY2tvRUhGY2JzV095WVc1cGpOVnVIXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-1. Change the end-effector into Frank Hand and click to unlock joints. 
+2. Change the end-effector into Frank Hand and click to unlock joints. 
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=OTg0YmFjZTk2NWE0MmM0OWU3M2RlYjQ0YjMwMmZjZTRfdmh4UnhTU0o1TDJBbEk3MWtqOXJtbHZoazlMcW01MExfVG9rZW46Ym94Y252SmtyRFVBQ2VDUjhTejlnMHVxVzVlXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
 
 
-1. Run realsense-viewer then adjust the resolution ratio to 1280x720. 
+3. Run realsense-viewer then adjust the resolution ratio to 1280x720. 
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=MTBkNDU0Mjg0YzlmOGFiYjkwOGQzYTk3MmEyODc1YjNfa0t2OVROMDhMQjY3QzNiSFZsU2pucGVMeGZ5Vk1TTTFfVG9rZW46Ym94Y25IeGhxdnZnaHFTT2d4b0tUUXY1UTh2XzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-1. Then select a region which contains the object and record the coordinates of the top left corner (x1,y1) and the lower right corner (x2,y2). 
+4. Then select a region which contains the object and record the coordinates of the top left corner (x1,y1) and the lower right corner (x2,y2). 
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmIxMzgxZDg1YTA2ZmVjYTE2YjE3MGY0MTA4ZmIyNmFfcVRMVWMxaFhiaDBEQ3B3cjJqNkVCZlJDbkpJRzdEMjdfVG9rZW46Ym94Y25Ra2lucUU5S20wQ1pDWUJRUkxlN0RnXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-1. Modify the crop_bounding =[y1,y2,x1,x2] in main.py
+5. Modify the crop_bounding =[y1,y2,x1,x2] in main.py
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=YzkyNTQ4MmRmMmY1N2U2ZjBhZjk3NzY5NTZiMDRiOWZfajExdlMzMWx0Z2pITGRFQzRnNVB6N0pGdlJ3ekRSYnZfVG9rZW46Ym94Y241V1kwNk1mVDFQSWE4WFBMYWJGOWxnXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-1. Adjust the grabbing height. In case of collision, we should change the value of height from high to low. After test, we find that z = 0.03 will ensure that the manipulator picks the bottle successfully.
+6. Adjust the grabbing height. In case of collision, we should change the value of height from high to low. After test, we find that z = 0.03 will ensure that the manipulator picks the bottle successfully.
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=MTNiYTRkYmNiMWY0NjRlM2M3Zjg1NTc0ZGEzMDhkM2RfWFIwRDJCdzAzRDlqSHVFeGVBRHBiYzl4RGRlcEZIeHRfVG9rZW46Ym94Y241TWJSOXZSWHY2bzVQRDVISllRMVRjXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-1. Shut the realsense-viewer then run main.py.
+7. Shut the realsense-viewer then run main.py.
 
 
 
@@ -255,7 +255,7 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 
 Solution: Restart the frank hand and connect the end-effector with the deepclaw again.
 
-1. Problem: There is a phase difference of 90° while the end-effector is grabbing the object.
+2. Problem: There is a phase difference of 90° while the end-effector is grabbing the object.
 
 Solution: Modify the code in main.py. 
 
@@ -267,13 +267,13 @@ else:
     angle = 0
 ```
 
-1. Problem: The grabbing location is not precise.
+3. Problem: The grabbing location is not precise.
 
 Solution:  Do the calibration again or compensate for the error.
 
 
 
-1. Problem: The position and the attitude of the manipulator is not correct.
+4. Problem: The position and the attitude of the manipulator is not correct.
 
 Solution:  Modify the code in main.py. Do not transfer to rotation vector.
 
@@ -315,14 +315,6 @@ First of all, to figure out the deviation of the robot arm recognition in differ
 | -------------------------------------------- | ----------- | ----------- | ----------- |
 | Calibrator coordinates                       | （273,296） | （445,300） | （691,302） |
 | Deviation between the calibrator and gripper | 3.5cm left  | 2.5cm right | 4.5cm right |
-
-​      
-
-​      
-
-​      
-
- 
 
 
 
@@ -384,16 +376,6 @@ Firstly, four marking points are selected on the left side of the manipulator ar
 | ---------------------- | ----------- | ----------- | ----------- | ----------- |
 | Manipulator coordinate | （0.5,0.5） | （0.5,0.6） | （0.4,0.5） | （0.4,0.6） |
 | Camera space           | （1151,441) | （1124,416) | （1048,336) | （1121,340) |
-
-​       
-
-​       
-
-​       
-
- 
-
-
 
 
 
