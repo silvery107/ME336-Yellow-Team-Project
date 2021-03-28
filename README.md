@@ -248,7 +248,9 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 
 7. Shut the realsense-viewer then run main.py.
 
+## Process
 
+![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDY0YWNhMDM4ZGY2MTFjMWIxM2RmYTUzZDQ5ZGI0ZGZfbHJYN2tVR09XVVBxRXk0MnpNMndxYlJpSmE2czV5Y0NfVG9rZW46Ym94Y251c3VPRURWajAxZG1peHZZREtMSjNjXzE2MTY5MTU0MzA6MTYxNjkxOTAzMF9WNA)
 
 ## Problem and Solution
 
