@@ -468,6 +468,9 @@ There are two cases of hand-eye calibration depending on if the camera is fixed 
 
 $$X_1 =TX_2 $$
 
+
+![img](https://bionicdl.feishu.cn/0e1c1ed4-d151-44b8-b115-e205f1a3e522)
+
   T is a homogeneous matrix, so the formula can also be written in form of rotation matrix R and translation matrix C: 
 
 $$X_1  =RX_2+C$$
@@ -483,3 +486,6 @@ $$y_1=r_3x_1+r_4y_2+c_2$$
   There are 6 unknown variables, so at least 3 points are needed to calculate the transfer matrix. Take the error of points’ coordination and camera distortion into consideration, we can reduce the measure error by sampling more points and take average whe. In practice, the nine-points calibration which requires 9 sample points is frequently used to get a better accuracy. Besides, sample points are better to be scattered over a large area in order to reduce the impact of measurement error.
 
   
+
+
+ 
