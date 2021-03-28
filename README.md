@@ -469,8 +469,6 @@ There are two cases of hand-eye calibration depending on if the camera is fixed 
 $$X_1 =TX_2 $$
 
 
-![img](https://bionicdl.feishu.cn/0e1c1ed4-d151-44b8-b115-e205f1a3e522)
-
   T is a homogeneous matrix, so the formula can also be written in form of rotation matrix R and translation matrix C: 
 
 $$X_1  =RX_2+C$$
