@@ -33,7 +33,7 @@ This 2D-Image-Picking project requires the following environments (Required Syst
 - Enter the environment to install requirements
 
 ```
-   conda activate me336
+conda activate me336
 cd Me336
 git clone https://github.com/bionicdl-sustech/ME336-2021Spring.git
 cd ME336-2021Spring
@@ -206,7 +206,7 @@ sh ./deepclaw/modules/end2end/yolov5/weights/download_weights.sh
 python ./deepclaw/modules/calibration/Calibration2D.py
 ```
 
-5. Modify the first two values in FC.move_p() in FrankaController.py, then run it.
+4. Modify the first two values in FC.move_p() in FrankaController.py, then run it.
 
 ```
 vim ./deepclaw/driver/arms/franka/FrankaController.py
@@ -215,7 +215,7 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=NjRkMzdiNmM3NDFkOGEyMmRjZmMzYWI1NzRiODg4MWJfZE1PbGxSSnB1YnZVQUdITE5zQUVhM2ZjZHlDR3lXQWJfVG9rZW46Ym94Y25NTDUyd21ETlBZdGZUNE1ldU04bFJjXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
 
-6. Observe the gap between the end of the robotic arm calibration board and the calibration object on the conveyor belt to check whether the error is reasonable.
+5. Observe the gap between the end of the robotic arm calibration board and the calibration object on the conveyor belt to check whether the error is reasonable.
 
 ## 2-D picking
 
@@ -226,7 +226,6 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 2. Change the end-effector into Frank Hand and click to unlock joints. 
 
 ![img](https://bionicdl.feishu.cn/space/api/box/stream/download/asynccode/?code=OTg0YmFjZTk2NWE0MmM0OWU3M2RlYjQ0YjMwMmZjZTRfdmh4UnhTU0o1TDJBbEk3MWtqOXJtbHZoazlMcW01MExfVG9rZW46Ym94Y252SmtyRFVBQ2VDUjhTejlnMHVxVzVlXzE2MTY5MDUzMzk6MTYxNjkwODkzOV9WNA)
-
 
 
 3. Run realsense-viewer then adjust the resolution ratio to 1280x720. 
@@ -253,7 +252,7 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 
 1. Problem: We have encountered the problem that although we start the frank hand, we can't connect the end-effector with the deepclaw.
 
-Solution: Restart the frank hand and connect the end-effector with the deepclaw again.
+$\ \ \ $Solution: Restart the frank hand and connect the end-effector with the deepclaw again.
 
 2. Problem: There is a phase difference of 90° while the end-effector is grabbing the object.
 
