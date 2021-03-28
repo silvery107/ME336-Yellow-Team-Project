@@ -6,6 +6,7 @@ Firstly, in this work, we need to complete the hand-eye calibration. With the ey
 ## Demo video
  Demo videos of 2D-picking with Franka manipulator arm can be found here. 
  ![demo_video](https://github.com/1079931505/ME336-Yellow-Team-Project1-2D-Picking/tree/main/images/demo.mp4)
+<video src="./images/demo.mp4" width="800px" height="600px" controls="controls"></video>
 ## Contact
 - SUSTech me336 yellow team
 ## Installation
