@@ -21,13 +21,13 @@ This 2D-Image-Picking project requires the following environments (Required Syst
   ```
   conda create -n me336 python=3.6
   ```
-1. Pycharm-Community Installation
+2. Pycharm-Community Installation
 
 - Open File at home/user/Me336/ME336-2021Spring and choose the conda environment with Interpreter me336
 
 
 
-1. Conda me336 Environment Configuration
+3. Conda me336 Environment Configuration
 
 - Change the Download source to mirror.tuna.tsinghua.edu.cn
 - Enter the environment to install requirements
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 
 
-1. Franka FCI Installation
+4. Franka FCI Installation
 
 ```
 sudo apt install git
@@ -61,7 +61,7 @@ sudo make install
 
 
 
-1. Realsense SDK Installation
+5. Realsense SDK Installation
 
 - Be sure that the realsense camera is **unconnected** with the host during this installation
 - Open the terminal and install
@@ -90,7 +90,7 @@ realsense-viewer
 
 
 
-1. PCL Installation
+6. PCL Installation
 
 - Open the terminal and run
 
@@ -126,7 +126,7 @@ sudo make install
 
 
 
-1. pybind11 Environment Installation
+7. pybind11 Environment Installation
 
 - Open the terminal and run 
 
@@ -151,7 +151,7 @@ cp ./*.so ../
 
 
 
-1. Franka Driver Installation (Ignored if using the file of teaching)
+8. Franka Driver Installation (Ignored if using the file of teaching)
 
 - Open the terminal and run 
 
