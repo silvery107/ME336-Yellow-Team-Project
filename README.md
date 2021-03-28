@@ -247,11 +247,7 @@ python ./deepclaw/driver/arms/franka/FrankaController.py
 
 1. Shut the realsense-viewer then run main.py.
 
-不支持在 Docs 外粘贴 block
 
-不支持在 Docs 外粘贴 block
-
-不支持在 Docs 外粘贴 block
 
 ## Problem and Solution
 
@@ -275,7 +271,7 @@ else:
 
 Solution:  Do the calibration again or compensate for the error.
 
-不支持在 Docs 外粘贴 block
+
 
 1. Problem: The position and the attitude of the manipulator is not correct.
 
