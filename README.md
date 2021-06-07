@@ -296,7 +296,6 @@ pick_pose = temp_pose
 pick_place(robot, robot, home_joints, pick_pose, place_xyzrt)
 ```
 
-# 
 
 # Evaluation
 
@@ -349,11 +348,11 @@ Through the qualitative experiment, we believe that the size of the error may be
 
 
 
-\1.    The size of the error is mainly related to the relative position of the target object and the initial selected reference point.
+1.The size of the error is mainly related to the relative position of the target object and the initial selected reference point.
 
 
 
-\2.    The size of the error is caused by the relative position of the target object and the camera.
+2.The size of the error is caused by the relative position of the target object and the camera.
 
 
 
