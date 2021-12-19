@@ -5,7 +5,6 @@ In the industrial field, picking target objects in 2D plane with the manipulator
 Firstly, in this work, we need to complete the hand-eye calibration. With the eye-to-hand camera fixation, the positions of several points both in camera frame and manipulator's  workspace frame are recorded to get the perspective transform matrix. In this way, coordinate transformation can be achieved. After the completion of calibration accuracy test, YOLO5 algorithm is used to detect the position of the target object based on the visual images information collected by the realsense camera. With the help of the transformation matrix, target position of the end-effector in the arm can be obtained. With all these information, the manipulator arm can be controlled to pick the object in 2D work plane.
 ## Demo video
  Demo videos of 2D-picking with Franka manipulator arm can be found here. 
- ![demo_video](./images/demo.mp4)
  
  <video src="./images/demo.mp4" width="800px" height="600px" controls="controls"></video>
 ## Contact
