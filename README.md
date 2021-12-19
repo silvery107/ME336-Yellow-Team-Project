@@ -5,8 +5,9 @@ In the industrial field, picking target objects in 2D plane with the manipulator
 Firstly, in this work, we need to complete the hand-eye calibration. With the eye-to-hand camera fixation, the positions of several points both in camera frame and manipulator's  workspace frame are recorded to get the perspective transform matrix. In this way, coordinate transformation can be achieved. After the completion of calibration accuracy test, YOLO5 algorithm is used to detect the position of the target object based on the visual images information collected by the realsense camera. With the help of the transformation matrix, target position of the end-effector in the arm can be obtained. With all these information, the manipulator arm can be controlled to pick the object in 2D work plane.
 ## Demo video
  Demo videos of 2D-picking with Franka manipulator arm can be found here. 
- ![demo_video](https://github.com/1079931505/ME336-Yellow-Team-Project1-2D-Picking/tree/main/images/demo.mp4)
-<video src="./images/demo.mp4" width="800px" height="600px" controls="controls"></video>
+ ![demo_video](https://github.com/silvery107/ME336-Yellow-Team-Project1-2D-Picking/tree/main/images/demo.mp4)
+ 
+ <video src="./images/demo.mp4" width="800px" height="600px" controls="controls"></video>
 ## Contact
 - SUSTech me336 yellow team
 ## Installation
@@ -174,7 +175,7 @@ cp RobotDriver.cpython-36m-x86_64-linux-gnu.so ../..
 1. Check out this repository and download our source code
 
 ```
-git clone git@github.com:1079931505/ME336-Yellow-Team-SUSTech.git
+git clone git@github.com:silvery107/ME336-Yellow-Team-SUSTech.git
 cd ME336-Yellow-Team-SUSTech 
 ```
 
@@ -468,20 +469,20 @@ There are two cases of hand-eye calibration depending on if the camera is fixed 
 
   In this case, the aim of hand-eye calibration is to calculate the transfer matrix T between robot arm coordinate X1 and camera coordinate X2: 
 
-$$X_1 =TX_2 $$
+`X_1 =TX_2`
 
 
   T is a homogeneous matrix, so the formula can also be written in form of rotation matrix R and translation matrix C: 
 
-$$X_1  =RX_2+C$$
+`X_1  =RX_2+C`
 
-$$[x_1, y_1]=R[x_2,y_2]+C$$
+`[x_1, y_1]=R[x_2,y_2]+C`
 
   After derivation: 
 
-$$x_1=r_1x_1+r_2y_2+c_1$$
+`x_1=r_1x_1+r_2y_2+c_1`
 
-$$y_1=r_3x_1+r_4y_2+c_2$$
+`y_1=r_3x_1+r_4y_2+c_2`
 
   There are 6 unknown variables, so at least 3 points are needed to calculate the transfer matrix. Take the error of points’ coordination and camera distortion into consideration, we can reduce the measure error by sampling more points and take average whe. In practice, the nine-points calibration which requires 9 sample points is frequently used to get a better accuracy. Besides, sample points are better to be scattered over a large area in order to reduce the impact of measurement error.
 
