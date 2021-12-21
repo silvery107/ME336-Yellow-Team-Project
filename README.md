@@ -1,4 +1,4 @@
-# ME336 Yellow Team Project
+# ME336 Yellow Team
 
 Project source code for ME336 Collaborative Robot Learning
 
