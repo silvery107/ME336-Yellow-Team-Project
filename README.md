@@ -3,7 +3,6 @@
 Project source code for ME336 Collaborative Robot Learning
 
 ## A Garbage Sorting System Based on Visual Recognition and Robotic Arm Tossing
-Project source code for Collaborative Robot Learning (ME336).
 
 **Projects:**
 * [Project 1 : 2D Picking](README_PROJECT_1.md)
