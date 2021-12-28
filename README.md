@@ -12,4 +12,4 @@ Project source code for ME336 Collaborative Robot Learning
 
 ## Demo Video
 
-![demo](./images/demo.mp4)
+[demo](https://github.com/silvery107/silvery107.github.io/raw/main/assets/img/tossing-video-4-3.mp4)
