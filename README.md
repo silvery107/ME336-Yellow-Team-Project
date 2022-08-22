@@ -9,12 +9,10 @@ Project source code for ME336 Collaborative Robot Learning
 * [Project 2 : 6D Picking](README_PROJECT_2.md)
 * [Project 3 : Agile Waste Sorting with Tossing](/projects/ME336_Report.pdf)
 
-<img src="./drawings/Project_3_proposal.png" width=400/>
+<img src="./drawings/Project_3_proposal.png" width=600/>
 
 ## Demo Video
 
-[demo](https://github.com/silvery107/silvery107.github.io/raw/main/assets/img/tossing-video-4-3.mp4)
 
+https://user-images.githubusercontent.com/44640904/185954403-b1a46d5d-f8ff-4a3d-b9fa-c7c05c72230f.mp4
 
-
-<img src="./images/tossing-img.jpg" width=400>
