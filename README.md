@@ -1,4 +1,4 @@
-# ME336 Yellow Team
+# Waste Sorting with Robot Arm Tossing
 
 Project source code for ME336 Collaborative Robot Learning
 
